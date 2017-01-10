@@ -1,1 +1,21 @@
-<html></html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Git Page</title>
+  </head>
+  <body>
+    <p>
+      Github is a site where your personal account stores repositories of files. You can
+    create a repository with yourusername.github.io which will be a live hosting page for
+    your website. GitHub Desktop is an application on your computer that can track changes
+  to files in your repository and allows you to clone your repository to your computer.  </p>
+    <p>
+      Atom is a text editor application that is also made by Git. It can create HTML, CSS,
+    and JavaScript files. If you save your Atom files in your Github repository, Github
+    Desktop tracks those changes. You can then commit those changes to your Master and Sync
+    the changes with you Github repository online. After it is synced you can view your
+    web page live online.
+  </p>
+  </body>
+</html>
