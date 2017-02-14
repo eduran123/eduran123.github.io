@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Week 6</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <style>
+.headerHeight{
+  height: 200px;
+  max-height: 200px;
+  min-height: 200px;
+}
+.navHeight{
+  height: 50px;
+  max-height: 50px;
+  min-height: 50px;
+}
+.titleHeight{
+  height: 50px;
+  max-height: 50px;
+  min-height: 50px;
+}
+.photoHeight{
+  height: 150px;
+  max-height: 150px;
+  min-height: 150px;
+}
+.bodyHeight{
+  height: 100px;
+  max-height: 100px;
+  min-height: 100px;
+}
+.footerHeight{
+  height: 20px;
+  max-height: 20px;
+  min-height: 20px;
+}
+.wrapper{
+  width: 940px;
+  max-width: 940px;
+  min-width: 940px;
+  margin:auto;
+}
+    </style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="row">
+        <div class="col-md-8 randomColor headerHeight">
+
+        </div>
+        <div class="col-md-4 randomColor headerHeight">
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2 randomColor navHeight">
+
+        </div>
+        <div class="col-md-2 randomColor navHeight">
+
+        </div>
+        <div class="col-md-2 randomColor navHeight">
+
+        </div>
+        <div class="col-md-2 randomColor navHeight">
+
+        </div>
+        <div class="col-md-2 randomColor navHeight">
+
+        </div>
+        <div class="col-md-2 randomColor navHeight">
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2 randomColor titleHeight">
+
+        </div>
+        <div class="col-md-8 randomColor titleHeight">
+
+        </div>
+        <div class="col-md-2 randomColor titleHeight">
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 randomColor photoHeight">
+
+        </div>
+        <div class="col-md-4 randomColor photoHeight">
+
+        </div>
+        <div class="col-md-4 randomColor photoHeight">
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 randomColor photoHeight">
+
+        </div>
+        <div class="col-md-4 randomColor photoHeight">
+
+        </div>
+        <div class="col-md-4 randomColor photoHeight">
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 randomColor bodyHeight">
+          <p>
+            Well, this design works well because customers can see popular card right from the home page. The nav bar also
+            has quick access to the contact information for Larry. It's a simple design and will be easy to use. A picture
+            of Larry has a spot in the header to add a personal touch to the site. 
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 randomColor footerHeight">
+
+        </div>
+      </div>
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script>
+        function getRandomNumber(min, max) {
+            return Math.floor(Math.random() * max + min);
+        }
+
+        $(document).ready(function() {
+
+            var bodyColumns = $(".randomColor");
+
+            bodyColumns.each(function() {
+
+                $(this).css("background-color", "rgb(" + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + ")");
+
+            })
+
+            $("body").css("background-color", "rgb(" + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + ")");
+
+
+        })
+    </script>
+  </body>
+</html>
